@@ -102,7 +102,7 @@ express.get('/' , async(req , res)=>{
     res.send(value);
   })
 
-  express.listen(5000 , ()=>{
+  express.listen(process.env.PORT || 5000 , ()=>{
     console.log(`Example app listenning on port ${3000}`);
   })
  
